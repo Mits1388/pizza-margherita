@@ -39,16 +39,43 @@ public class LoginPage {
         return this;
     }
 
-    public LoginPage clickButtonBasket() {
-        By by = By.xpath(LoginXpath.BUTTON_BASKET_XPATH);
+    public LoginPage clickButtonBasketPizza() {
+        By by = By.xpath(LoginXpath.BUTTON_BASKET_PIZZA_XPATH);
         WebElement element = driver.findElement(by);
         element.click();
         return this;
     }
 
-    public String textOrder() {
-        By by = By.xpath(LoginXpath.TEXT_ORDER_XPATH);
+    public String textPizza() {
+        By by = By.xpath(LoginXpath.TEXT_PIZZA_XPATH);
         WebElement element = driver.findElement(by);
         return element.getText();
+    }
+
+    public String textDrink() {
+        By by = By.xpath(LoginXpath.TEXT_COLA_XPATH);
+        WebElement element = driver.findElement(by);
+        return element.getText();
+    }
+
+    public LoginPage clickButtonCola() {
+        By by = By.xpath(LoginXpath.BUTTON_COLA_XPATH);
+        WebElement element = driver.findElement(by);
+        element.click();
+        return this;
+    }
+
+    public LoginPage clickButtonDrink() {
+        By by = By.xpath(LoginXpath.BUTTON_DRINK_XPATH);
+        WebElement element = driver.findElement(by);
+        element.click();
+        return this;
+    }
+
+    public LoginPage clickButtonBasketPizzaDrink() {
+        By by = By.xpath(LoginXpath.BUTTON_BASKET_PIZZA_DRINK_XPATH);
+        WebElement element = driver.findElement(by);
+        element.click();
+        return this;
     }
 }
