@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+
 public class LoginPage {
     private WebDriver driver;
 
@@ -73,7 +74,7 @@ public class LoginPage {
     }
 
     public LoginPage clickButtonBasketPizzaDrink() {
-        By by = By.xpath(LoginXpath.BUTTON_BASKET_PIZZA_DRINK_XPATH);
+        By by = By.tagName(LoginXpath.BUTTON_BASKET_PIZZA_DRINK_XPATH);
         WebElement element = driver.findElement(by);
         element.click();
         return this;
