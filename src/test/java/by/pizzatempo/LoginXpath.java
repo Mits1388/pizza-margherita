@@ -10,5 +10,5 @@ public class LoginXpath {
     public static final String BUTTON_DRINK_XPATH = "/html/body/div[1]/div[3]/ul/li[6]";
     public static final String BUTTON_COLA_XPATH = "/html/body/div[1]/div[5]/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[2]/button/span/span";
     public static final String TEXT_COLA_XPATH = "/html/body/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/table/tbody/tr[2]/td[2]/div[1]";
-    public static final String BUTTON_BASKET_PIZZA_DRINK_XPATH = "/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[1]/div[1]";
+    public static final String BUTTON_BASKET_PIZZA_DRINK_XPATH = "/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[1]/div[1]/a";
 }

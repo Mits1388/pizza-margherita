@@ -16,13 +16,23 @@ public class LoginTest extends BaseTest {
 
     @Test(testName = "тест: заказ пиццы Маргарита")
     public void testOrderPizza() {
-        loginPage.clickButtonPizza().clickButtonSize31().clickButtonOrderOne().clickButtonOrderTwo().clickButtonBasketPizza();
+        loginPage.clickButtonPizza()
+                .clickButtonSize31()
+                .clickButtonOrderOne()
+                .clickButtonOrderTwo()
+                .clickButtonBasketPizza();
         Assert.assertEquals(loginPage.textPizza(), LoginMessage.TEXT_PIZZA_XPATH);
     }
 
     @Test(testName = "тест: заказ пиццы Маргарита и напитка")
     public void testOrderPizzaAndDrink() {
-        loginPage.clickButtonPizza().clickButtonSize31().clickButtonOrderOne().clickButtonOrderTwo().clickButtonDrink().clickButtonCola().clickButtonBasketPizzaDrink();
+        loginPage.clickButtonPizza()
+                .clickButtonSize31()
+                .clickButtonOrderOne()
+                .clickButtonOrderTwo()
+                .clickButtonDrink()
+                .clickButtonCola()
+                .clickButtonBasketPizzaDrink();
         Assert.assertEquals(loginPage.textPizza(), LoginMessage.TEXT_PIZZA_XPATH);
         Assert.assertEquals(loginPage.textDrink(), LoginMessage.TEXT_COLA_XPATH);
     }
